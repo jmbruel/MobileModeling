@@ -1,0 +1,19 @@
+@startuml
+'-----------------
+hide members
+hide circle
+'show methods
+'-----------------
+	class Application
+	class Activity
+	class Component
+	class Configuration
+	class Handler
+	class Intent
+	class Layout
+	class Process
+	class Resource
+	class Service
+	class Values
+@enduml
+	

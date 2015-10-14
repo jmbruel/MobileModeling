@@ -1,0 +1,87 @@
+/*========================================*/
+/* Graphviz file for Asciidoc documents   */
+/* JMB 2015 jbruel@gmail.com			        */
+/*========================================*/
+
+digraph G {
+	/* --------- parametres ----------------------*/
+
+	fontcolor=grey10 ;
+	fontname=Monaco ;
+	fontsize=11 ;
+	node [shape=rectangle, fillcolor=lightcyan, style="rounded,filled",fontcolor=grey10,fontname=Monaco,fontsize=11]
+
+	// concentrate=true ;
+
+	// ratio=fill;
+
+	rankdir=TB; //LR
+
+	/* --------- elements ----------------------*/
+	subgraph cluster0 {
+	    	label = "Semaine 0";
+			shape=rectangle ;
+			style=filled; fillcolor=lightgrey ;
+
+		    dist [label="Distribution des sujets"];
+			grpe [label="Constitution \ndes Groupes"];
+		}
+
+	subgraph cluster1 {
+	    	label = "Semaine 1";
+			shape=rectangle ;
+			style=filled; fillcolor=lightpink1 ;
+
+		    ccu [label="Étudier le \nCahier des charges"];
+			list [label="Lister les \nfonctionnalités"];
+			org [label="S'organiser"]
+		}
+
+	subgraph cluster2 {
+	    	label = "Semaine 1&2";
+			shape=rectangle ;
+			style=filled; fillcolor=lightpink2 ;
+
+		    uc [label="Diag. UC"];
+			sni [label="SNI"];
+			ecrans [label="Écrans"]
+
+		}
+
+	subgraph cluster3 {
+	    	label = "Semaine 2&3";
+			shape=rectangle ;
+			style=filled; fillcolor=lightpink3 ;
+
+			dss [label="Diag. Séq. Syst."];
+			ds [label="Diag. Séq."];
+			mvc [label="MVC"]
+		}
+
+	subgraph cluster4 {
+	    	label = "Semaine 3&4";
+			shape=rectangle ;
+			style=filled; fillcolor=lightcoral ;
+
+		    codage [label="Codage"];
+			rapport [label="Rapport"];
+			tests [label="Tests"]
+		}
+
+	/* --------- graphe ----------------------*/
+
+	dist -> ccu
+	ccu->org [constraint=false] ;
+	ccu->list;
+
+	uc->sni->ecrans  [constraint=false];
+	list->uc ;
+
+	uc->dss ;
+	sni->dss;
+	dss->{ds;mvc}  [constraint=false];
+	mvc->ds ;
+
+	dss->tests;
+	tests -> codage -> rapport  [constraint=false];
+}

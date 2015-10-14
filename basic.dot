@@ -1,0 +1,17 @@
+/*========================================*/
+/* Graphviz basic definitions for Asciidoc documents   */
+/* JMB 2015 jbruel@gmail.com			        */
+/*========================================*/
+
+	/* --------- parametres ----------------------*/
+
+	fontcolor=grey10 ;
+	fontname=Monaco ;
+	fontsize=11 ;
+	node [shape=rectangle, fillcolor=lightcyan, style="rounded,filled",fontcolor=grey10,fontname=Monaco,fontsize=11]
+
+	// concentrate=true ;
+
+	// ratio=fill;
+
+	rankdir=TB; //LR

@@ -1,0 +1,43 @@
+@startuml
+'------------------------- Fonts & Defs
+'skinparam backgroundColor LightYellow
+skinparam defaultFontName Monaco
+skinparam package {
+ 	BackgroundColor LightGrey
+}
+skinparam ClassBackgroundColor<<MAIN>> LightGreen
+center footer For more: http://developer.android.com/guide/components/fundamentals.html \nCC BY-SA 3.0 - http://jmb.c.la - 2015
+
+hide members
+hide stereotypes
+'show methods
+hide circle
+'------------------------- Main components
+class Activities  <<MAIN>>
+android.app.Activity <|-- Activities
+Application *--> "1..*" Activities
+
+class "Single \nScreen" as screen
+Activities --> screen : represents
+
+class Services <<MAIN>>
+'note right : "Run in the background"
+android.app.Service <|-- Services
+Activities - Services : can interact with
+
+class "Content \nProviders" as cp <<MAIN>>
+android.content.ContentProvider <|-- cp
+Interface "Standard Set \nof APIs" as api
+api <|.. cp
+
+class "Broadcast \nReceiver" as broad <<MAIN>>
+android.content.BroadcastReceiver <|-- broad
+
+Activities -> android.content.Intent : activated by
+Services --> android.content.Intent : activated by
+android.content.Intent <-- broad : activated by
+
+Activities --> cp : can use
+Activities --> broad : can initiate
+
+@enduml

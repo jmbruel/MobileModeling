@@ -1,0 +1,27 @@
+/*========================================*/
+/* Graphviz file for Asciidoc documents   */
+/* JMB 2015 jbruel@gmail.com			        */
+/*========================================*/
+
+digraph G {
+	/* --------- parametres ----------------------*/
+
+	fontcolor=grey10 ;
+	fontname=Monaco ;
+	fontsize=11 ;
+	node [shape=rectangle, fillcolor=lightcyan, style="rounded,filled",fontcolor=grey10,fontname=Monaco,fontsize=11]
+
+	// concentrate=true ;
+
+	// ratio=fill;
+
+	rankdir=TB; //LR
+
+
+	/* --------- elements ----------------------*/
+	dev [shape=ellipse,color=red,style=bold,label="icon:mobile[] Caroline",image="images/prfc.jpg",labelloc=b];
+
+	/* --------- graphe ----------------------*/
+
+	dev -> jmb
+}

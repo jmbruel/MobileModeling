@@ -1,0 +1,22 @@
+@startuml
+'------------------------- Fonts & Defs
+'skinparam backgroundColor LightYellow
+skinparam defaultFontName Monaco
+skinparam package {
+ 	BackgroundColor LightGrey
+}
+skinparam stateBackgroundColor<<extra>> LightBlue
+
+State "Linux \nProcess" as linux
+State "Virtual \nMachine" as vm
+State Android {
+	State resource1
+	State resource2
+}
+Application -> UserId : has
+UserId -> linux : runs on
+linux -> vm: has its own
+vm --> resource1
+note right on link : principle of least privilege
+
+@enduml
