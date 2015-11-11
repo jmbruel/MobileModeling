@@ -21,14 +21,21 @@
 # To add other dependencies for your awestruct site simply follow the same pattern as you'll
 # find below. To make use of dependecies listed here, simply remove the '#' from the start of
 # the line to uncomment the dependency. We hope you enjoy using Awestruct!
-
+# rvm install ruby-2.0.0-p451
 source 'https://rubygems.org'                             # This tells Bundler where to look for gems
 
-gem 'awestruct', '>= 0.5.6'                               # Goes without saying
-gem 'webrick', '~> 1.3.1'                                 # The rack webserver to use in dev mode
+#gem 'awestruct', '>= 0.5.6'                               # Goes without saying
+#gem 'webrick', '~> 1.3.1'                                 # The rack webserver to use in dev mode
 
-gem 'compass', '>= 1.0.1'
-gem 'zurb-foundation', '>= 4.3.2'
+#gem 'compass', '>= 1.0.1, ~> 1'
+#gem 'zurb-foundation', '>= 4.3.2, ~> 4.3.2'
+#gem 'compass', '>= 1.0.1'
+#gem 'zurb-foundation', '>= 4.3.2'
+gem 'asciidoctor', '>= 0.1.1'                           # If using AsciiDoc syntax, need 0.1.1 for Header support
+gem 'asciidoctor-diagram'
+#gem 'jekyll'
+#gem 'github-pages'
+# for nokogiri : sudo gem install nokogiri -- --with-xml2-include=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/libxml2/ --use-system-libraries
 
 # FIXME
 # gem 'rake', '>= 0.9.2'                                  # Needed for the Rakefile to work
@@ -42,7 +49,6 @@ gem 'zurb-foundation', '>= 4.3.2'
 # gem 'less', '>= 2.2.2'                                  # If using LESS instead of sass
 # gem 'org-ruby', '>= 0.8'                                # If using Org-Mode
 # gem 'RedCloth', '>= 4.2.9'                              # If using Textile
-# gem 'asciidoctor', '>= 0.1.1'                           # If using AsciiDoc syntax, need 0.1.1 for Header support
 # gem 'slim', '>= 1.3.6'                                  # If using slim instead of haml
 # gem 'kramdown', '>= 0.14.2'                             # If using Markdown
 # gem 'uglifier', '>= 1.3.0'                              # If using the minify transformer

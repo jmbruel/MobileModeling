@@ -5,7 +5,7 @@ ICONSDIR=images/icons
 IMAGESDIR=./images
 DZSLIDES=../asciidoctor-backends/slim/dzslides
 #STYLE=/Users/bruel/dev/POO/COO/stylesheets/golo-jmb.css
-#STYLE=/Users/bruel/Dropbox/dev/asciidoctor-stylesheet-factory/stylesheets/readthedocs.css
+STYLE=../asciidoctor-stylesheet-factory/stylesheets/jmb.css
 ASCIIDOCTOR=asciidoctor
 #ASCIIDOCTOR=asciidoctor -a icons=font -a stylesheet=../font-awesome-4.4.0/css/font-awesome.min.css -a iconsdir=$(ICONSDIR)  -a imagesdir=$(IMAGESDIR)
 EXT=asc
@@ -20,12 +20,21 @@ $(OUTPUT)/%.html: %.$(EXT)
 	$(ASCIIDOCTOR) -b html5 \
 		-a numbered \
 		-a stylesheet=$(STYLE) \
+		-a source-highlighter=highlightjs \
 		-a data-uri \
 		-a toc2 \
 		-r asciidoctor-diagram \
 		-o $@ $<
 
 $(OUTPUT)/%.slides.html: %.$(EXT)
+	@echo '==> Compiling asciidoc files to generate Deckjs'
+	$(ASCIIDOCTOR) -b dzslides \
+		-T $(DZSLIDES) -E slim \
+		-a slides \
+		-r asciidoctor-diagram \
+		-o $@ $<
+
+cusi.html: cusi.asc
 	@echo '==> Compiling asciidoc files to generate Deckjs'
 	$(ASCIIDOCTOR) -b dzslides \
 		-T $(DZSLIDES) -E slim \
