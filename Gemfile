@@ -31,7 +31,7 @@ source 'https://rubygems.org'                             # This tells Bundler w
 #gem 'zurb-foundation', '>= 4.3.2, ~> 4.3.2'
 #gem 'compass', '>= 1.0.1'
 #gem 'zurb-foundation', '>= 4.3.2'
-gem 'asciidoctor', '>= 0.1.1'                           # If using AsciiDoc syntax, need 0.1.1 for Header support
+gem 'asciidoctor', '>= 1.5.4'                           # If using AsciiDoc syntax, need 0.1.1 for Header support
 gem 'asciidoctor-diagram'
 #gem 'jekyll'
 #gem 'github-pages'
@@ -49,7 +49,10 @@ gem 'asciidoctor-diagram'
 # gem 'less', '>= 2.2.2'                                  # If using LESS instead of sass
 # gem 'org-ruby', '>= 0.8'                                # If using Org-Mode
 # gem 'RedCloth', '>= 4.2.9'                              # If using Textile
-# gem 'slim', '>= 1.3.6'                                  # If using slim instead of haml
+gem 'slim', '>= 2.1.0'                                  # If using slim instead of haml
 # gem 'kramdown', '>= 0.14.2'                             # If using Markdown
 # gem 'uglifier', '>= 1.3.0'                              # If using the minify transformer
 # gem 'htmlcompressor', '>= 0.0.3'                        # If using the minify transformer
+gem 'tilt'
+gem 'haml'
+gem 'thread_safe'

@@ -4,7 +4,7 @@ MAINDIR=/Users/bruel/Dropbox/dev/MobileModeling
 ICONSDIR=images/icons
 IMAGESDIR=./images
 DZSLIDES=../asciidoctor-backends/slim/dzslides
-#STYLE=/Users/bruel/dev/POO/COO/stylesheets/golo-jmb.css
+#STYLE=../POO/COO/stylesheets/golo-jmb.css
 STYLE=../asciidoctor-stylesheet-factory/stylesheets/jmb.css
 ASCIIDOCTOR=asciidoctor
 #ASCIIDOCTOR=asciidoctor -a icons=font -a stylesheet=../font-awesome-4.4.0/css/font-awesome.min.css -a iconsdir=$(ICONSDIR)  -a imagesdir=$(IMAGESDIR)
@@ -19,7 +19,6 @@ $(OUTPUT)/%.html: %.$(EXT)
 	@echo '==> Compiling asciidoc files to generate HTML'
 	$(ASCIIDOCTOR) -b html5 \
 		-a numbered \
-		-a stylesheet=$(STYLE) \
 		-a source-highlighter=highlightjs \
 		-a data-uri \
 		-a toc2 \
