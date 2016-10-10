@@ -1,13 +1,17 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    asciidoctor (1.5.2)
+    asciidoctor (1.5.5)
     asciidoctor-diagram (1.3.1)
       asciidoctor (~> 1.5.0)
+    haml (4.0.7)
+      tilt
     slim (3.0.6)
       temple (~> 0.7.3)
       tilt (>= 1.3.3, < 2.1)
     temple (0.7.6)
+    thread_safe (0.3.5)
+    thread_safe (0.3.5-java)
     tilt (2.0.2)
 
 PLATFORMS
@@ -15,10 +19,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  asciidoctor (>= 0.1.1)
+  asciidoctor (>= 1.5.4)
   asciidoctor-diagram
-  slim (>= 1.3.6)
+  haml
+  slim (>= 2.1.0)
+  thread_safe
   tilt
 
 BUNDLED WITH
-   1.11.2
+   1.13.1
