@@ -1,0 +1,29 @@
+@startuml
+'------------------------- Fonts & Defs
+!include /Users/bruel/localdev/MobileModeling/images/SLAT-Parapente/mesdefs.plantuml
+hide method
+'------------------------- Fonts & Defs
+
+'------------------------- Main components
+Abstract class Sortie
+class Vol extends Sortie
+class Sejour extends Sortie
+class Membre {
+	nom
+	prenom
+}
+class Chauffeur extends Membre {
+	puissanceVehicule
+}
+class Passager extends Membre {	
+}
+class Status {
+	participe
+}
+'------------------------- Diagram
+
+Chauffeur "1..*" <--o "*" Sortie
+Passager "*" <--o "*" Sortie
+(Passager, Sortie) .. Status
+
+@enduml

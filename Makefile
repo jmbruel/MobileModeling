@@ -1,5 +1,5 @@
 #-----------------------------------------------------
-DZSLIDES=../../asciidoctor-backends/slim/dzslides
+DZSLIDES=../asciidoctor-backends/slim/dzslides
 DECKJS=../..asciidoctor-deck.js/templates/haml/
 #STYLE=../POO/COO/stylesheets/golo-jmb.css
 STYLE=../../asciidoctor-stylesheet-factory/stylesheets/jmb.css
@@ -27,7 +27,7 @@ $(OUTPUT)/%.html: %.$(EXT)
 		-a source-highlighter=$(HIGHLIGHT) \
 		-o $@ $<
 
-$(OUTPUT)/%.dzslides.html: %.$(EXT)
+$(OUTPUT)/%.dzslides.html: %.$(EXT) *.asc
 	@echo '==> Compiling asciidoc files to generate Dzslides'
 	$(ASCIIDOCTOR) -b dzslides \
 		-T $(DZSLIDES) -E slim \

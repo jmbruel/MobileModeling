@@ -1,6 +1,6 @@
 = icon:mobile-phone[role=lime] Mobile Application icon:android[role=lime] *Modeling*
 Jean-Michel Bruel <jbruel@gmail.com>
-v1.3, {localdate} (started on 2015-10-05)
+v1.4, {localdate} (started on 2015-10-05)
 :icons: font
 :experimental:
 :status:
@@ -46,9 +46,9 @@ endif::definitions[]
 [{intro}]
 == Avant-propos
 
+
 ifndef::slides[.La promo 2016/2017]
 image::promo2016.jpg[width=50%]
-blabla
 
 {siteurl}
 
@@ -74,12 +74,11 @@ ifdef::slides[== !]
 - UML & Modeling for Mobile Applications
 - Case study
 
-
 include::organization.asc[]
 
 include::brainstorming.asc[]
 
-/////
+
 // ------------------------------------------ Web Pascal Roques
 include::mobilisation.asc[]
 
@@ -99,13 +98,15 @@ endif::slides[]
 
 include::reverse.asc[]
 
+
 // ------------------------------------------ Case Study
 ifndef::slides[]
 include::caseStudy.asc[leveloffset=+1]
 endif::slides[]
+
 ifdef::slides[]
 [{intro}]
-== icon:bicycle[] Case Study
+== icon:paper-plane-o[] Case Study  icon:car[]
 
 [{topic}]
 == icon:book[] Content
@@ -115,7 +116,7 @@ ifdef::slides[]
 - Tools
 - Expected outputs
 
-include::caseStudy.asc[leveloffset=+1]
+include::caseStudy.asc[]
 endif::slides[]
 
 ifndef::slides[]
@@ -135,4 +136,3 @@ ifdef::slides[]
 == *The End* {nbsp} {nbsp} {nbsp} [detail]#(for me!)#
 
 endif::slides[]
-/////

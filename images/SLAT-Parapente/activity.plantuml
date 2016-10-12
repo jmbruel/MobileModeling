@@ -1,0 +1,12 @@
+@startuml
+'-----------------
+'skinparam backgroundColor LightYellow
+skinparam defaultFontName Monaco
+center footer CC BY-SA 3.0 - http://jmb.c.la - 2015
+hide members
+'-----------------
+package android.app #DDDDDD {
+  class Activity << (A,green)>>
+}
+Activity <|-- MyActivity
+@enduml

@@ -1,0 +1,20 @@
+@startuml
+'------------------------- Fonts & Defs
+!include /Users/bruel/localdev/MobileModeling/images/SLAT-Parapente/mesdefs.plantuml
+'------------------------- Main components
+State "Ecran \nd'accueil" as accueil
+State "Chauffeur" as chauffeur {
+	State "Config" as running <<running>>
+	running : entry/ declareChauffeur(self)
+	State "Conduire" as driving
+	
+	[*] --> running
+	running -> driving : drive()
+	
+}
+'------------------------- Diagram
+[*] --> accueil
+accueil --> chauffeur : driving()
+accueil --> [*] : quit()
+chauffeur --> [*] : quit()
+@enduml

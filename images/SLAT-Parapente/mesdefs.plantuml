@@ -1,0 +1,17 @@
+'skinparam backgroundColor LightYellow
+skinparam defaultFontName Monaco
+center footer CC BY-SA 4.0 - http://jmbruel.github.io - 2016
+
+'skinparam backgroundColor LightBlue
+skinparam defaultFontName Monaco
+skinparam state {
+ 	'StartColor Green
+ 	'EndColor Red
+	ArrowColor Black
+ 	'BackgroundColor Peru
+ 	BackgroundColor<<NotVisible>> Olive
+ 	BorderColor Gray
+	BorderColor<<Running>> DarkGreen
+	'FontName Papyrus
+}
+

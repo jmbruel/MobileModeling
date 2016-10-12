@@ -1,0 +1,38 @@
+@startuml
+'------------------------- Fonts & Defs
+!include /Users/bruel/localdev/MobileModeling/images/SLAT-Parapente/mesdefs.plantuml
+'left to right direction
+'------------------------- Fonts & Defs
+
+'------------------------- Main components
+Actor Trésorier as tr
+Actor Chauffeur as ch
+Actor Passager as p
+
+(Gérer les membres) as gerer
+(Afficher les membres) as af
+(Ajouter un membre) as aj
+
+(Déclarer chauffeur) as declc
+(Déclarer passager) as declp
+(Scanner code) as scan
+
+(Déclarer déplacement) as depl
+'------------------------- Diagram
+tr --> gerer
+gerer <.. af : << extend >>
+gerer <.. aj : << extend >>
+
+ch --> depl 
+depl --> tr
+
+ch -> declc
+p -> declc
+
+ch --> declp
+p --> declp
+
+declp <.. scan : << extend >>
+declc <.. scan : << extend >>
+
+@enduml
