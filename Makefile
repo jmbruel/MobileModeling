@@ -7,12 +7,12 @@ STYLE=../../asciidoctor-stylesheet-factory/stylesheets/jmb.css
 ASCIIDOCTOR=asciidoctor -a icons=font
 EXT=adoc
 OUTPUT=.
-SITE=../jmbruel.github.io/teaching
+SITE=..
 #THEME=colony
 THEME=riak
 #The valid options are coderay, highlightjs, prettify, and pygments.
 HIGHLIGHT=pygments
-MAIN=testingCI
+MAIN=main
 #-----------------------------------------------------
 
 all: $(OUTPUT)/$(MAIN).html $(OUTPUT)/$(MAIN).slides.html
