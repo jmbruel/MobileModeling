@@ -99,6 +99,7 @@ endif::slides[]
 include::reverse.asc[]
 
 
+/////
 // ------------------------------------------ Case Study
 ifndef::slides[]
 include::caseStudy.asc[leveloffset=+1]
@@ -118,6 +119,8 @@ ifdef::slides[]
 
 include::caseStudy.asc[]
 endif::slides[]
+
+/////
 
 ifndef::slides[]
 :numbered!:
