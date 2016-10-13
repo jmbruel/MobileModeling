@@ -1,0 +1,34 @@
+@startuml
+'------------------------- Fonts & Defs
+'skinparam backgroundColor LightYellow
+skinparam defaultFontName Monaco
+skinparam state {
+ 	'StartColor Green
+ 	'EndColor Red
+	ArrowColor Black
+ 	'BackgroundColor Peru
+ 	'BackgroundColor<<NotVisible>> Olive
+ 	BorderColor Gray
+	BorderColor<<Running>> DarkGreen
+	'FontName Papyrus
+}
+center footer CC BY-SA 3.0 - http://jmb.c.la - 2015
+'------------------------- Main components
+State "Activity \nlaunched" as launched
+State "Activity \ndestroyed" as destroyed
+State "Invisible"  as zombi <<NotVisible>>
+State "Visible" as visible {
+	State "Activity \nrunning" as running <<Running>>
+	'running : entry/ onStart()
+	State "No Focus" as nofocus
+}
+'------------------------- Diagram
+[*] --> launched
+launched --> zombi : onCreate()
+zombi --> nofocus : onRestart()
+zombi --> nofocus : onStart()
+visible --> zombi : onStop()
+zombi --> destroyed : onDestroy()
+nofocus --> running : onResume()
+running -> nofocus : onPause()
+@enduml

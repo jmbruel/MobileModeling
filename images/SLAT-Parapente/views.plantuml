@@ -1,0 +1,21 @@
+@startuml
+'-----------------
+'skinparam backgroundColor LightYellow
+skinparam defaultFontName Monaco
+center footer CC BY-SA 3.0 - http://jmb.c.la - 2015
+hide members
+show methods
+'-----------------
+package android #DDDDDD {
+  class "android.view.View" as v << (A,green)>> {
+  	setId(int)
+  }
+  class "android.widget.TextView" as tv << (A,green)>> {
+  	setText(...)
+  }
+  class "android.widget.Button" as b << (A,green)>> {
+  }
+}
+v <|-- tv
+tv <|-- b
+@enduml

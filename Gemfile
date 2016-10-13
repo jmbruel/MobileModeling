@@ -56,3 +56,6 @@ gem 'slim', '>= 2.1.0'                                  # If using slim instead 
 gem 'tilt'
 gem 'haml'
 gem 'thread_safe'
+gem 'guard'
+gem 'guard-asciidoctor'
+gem 'rb-inotify', '~> 0.9'
