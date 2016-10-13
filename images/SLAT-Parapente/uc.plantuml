@@ -1,6 +1,6 @@
 @startuml
 '------------------------- Fonts & Defs
-!include /Users/bruel/localdev/MobileModeling/images/SLAT-Parapente/mesdefs.plantuml
+!include /Users/bruel/localdev/teaching/MobileModeling/images/SLAT-Parapente/mesdefs.plantuml
 'left to right direction
 '------------------------- Fonts & Defs
 
@@ -12,6 +12,7 @@ Actor Passager as p
 (Gérer les membres) as gerer
 (Afficher les membres) as af
 (Ajouter un membre) as aj
+(Gérer déplacement) as gdepl
 
 (Déclarer chauffeur) as declc
 (Déclarer passager) as declp
@@ -19,6 +20,7 @@ Actor Passager as p
 
 (Déclarer déplacement) as depl
 '------------------------- Diagram
+tr -left-> gdepl
 tr --> gerer
 gerer <.. af : << extend >>
 gerer <.. aj : << extend >>
