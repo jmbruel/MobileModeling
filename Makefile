@@ -2,7 +2,8 @@
 DZSLIDES=../asciidoctor-backends/slim/dzslides
 DECKJS=../..asciidoctor-deck.js/templates/haml/
 #STYLE=../POO/COO/stylesheets/golo-jmb.css
-STYLE=../../asciidoctor-stylesheet-factory/stylesheets/jmb.css
+#STYLE=../asciidoctor-stylesheet-factory/stylesheets/jmb.css
+#STYLE=../asciidoctor-stylesheet-factory/stylesheets/asciidoctor.css
 #ASCIIDOCTOR=asciidoctor  -a icons=font -a linkcss! -a data-uri
 ASCIIDOCTOR=asciidoctor -a icons=font
 EXT=adoc

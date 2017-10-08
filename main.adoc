@@ -1,6 +1,6 @@
 = icon:mobile-phone[role=lime] Mobile Application icon:android[role=lime] *Modeling*
 Jean-Michel Bruel <jbruel@gmail.com>
-v1.5, {localdate} (started on 2015-10-05)
+v1.7, {localdate} (started on 2015-10-05)
 :icons: font
 :experimental:
 :status:
@@ -46,9 +46,10 @@ endif::definitions[]
 [{intro}]
 == Avant-propos
 
-
-ifndef::slides[.La promo 2016/2017]
+ifndef::slides[]
+.La promo 2016/2017
 image::promo2016.jpg[width=50%]
+endif::slides[]
 
 {siteurl}
 
@@ -56,9 +57,9 @@ ifdef::slides[== !]
 
 Désolé...
 [{incremental}]
-- ... pour l'*anglais* (really?)
+- ... pour les supports en *anglais* (really?)
 - ... de ne *pas être un spécialiste* d'{android}
-- ... que vous soyez seulement la *2ème promo* à subir ce cours
+- ... que vous soyez seulement la *3ème promo* à subir ce cours
 - ... que ce cours arrive *avant que vous sachiez développer* en Android/Mobile [detail]#(majorité)#
 - ... que vous ayez à bosser *sans ordi* ce matin! [detail]#(au moins 1h30!)#
 
@@ -70,7 +71,7 @@ ifdef::slides[== !]
 
 [{incremental}]
 - Brainstorming & organization
-- Internet search & site web building
+- Internet search & web building
 - UML & Modeling for Mobile Applications
 - Case study
 
@@ -78,7 +79,7 @@ include::organization.asc[]
 
 include::brainstorming.asc[]
 
-
+/////
 // ------------------------------------------ Web Pascal Roques
 include::mobilisation.asc[]
 
@@ -117,6 +118,8 @@ ifdef::slides[]
 
 include::caseStudy.asc[]
 endif::slides[]
+
+/////
 
 ifndef::slides[]
 :numbered!:

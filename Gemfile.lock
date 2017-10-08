@@ -34,6 +34,7 @@ GEM
     notiffany (0.1.1)
       nenv (~> 0.1)
       shellany (~> 0.0)
+    posix-spawn (0.3.11)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -43,6 +44,9 @@ GEM
       method_source (~> 0.8.1)
       slop (~> 3.4)
       spoon (~> 0.0)
+    pygments.rb (0.6.3)
+      posix-spawn (~> 0.3.6)
+      yajl-ruby (~> 1.2.0)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
@@ -59,6 +63,7 @@ GEM
     thread_safe (0.3.5)
     thread_safe (0.3.5-java)
     tilt (2.0.2)
+    yajl-ruby (1.2.1)
 
 PLATFORMS
   java
@@ -70,10 +75,11 @@ DEPENDENCIES
   guard
   guard-asciidoctor
   haml
+  pygments.rb
   rb-inotify (~> 0.9)
   slim (>= 2.1.0)
   thread_safe
   tilt
 
 BUNDLED WITH
-   1.13.1
+   1.13.3
