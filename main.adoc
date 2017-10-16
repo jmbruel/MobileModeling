@@ -100,12 +100,12 @@ include::reverse.asc[]
 
 // ------------------------------------------ Case Study
 ifndef::slides[]
-include::caseStudy.asc[]
+include::caseStudy.adoc[]
 endif::slides[]
 
 ifdef::slides[]
 [{intro}]
-== icon:paper-plane-o[] Case Study  icon:car[]
+== icon:list-alt[] Case Study icon:dollar[]
 
 [{topic}]
 == icon:book[] Content
@@ -115,7 +115,7 @@ ifdef::slides[]
 - Tools
 - Expected outputs
 
-include::caseStudy.asc[]
+include::caseStudy.adoc[]
 endif::slides[]
 
 ifndef::slides[]
@@ -126,6 +126,8 @@ include::biblio.asc[]
 include::glossary.asc[leveloffset=+2]
 
 endif::slides[]
+
+:leveloffset: 0
 
 include::../about.adoc[]
 

@@ -95,7 +95,7 @@ ifdef::slides[:leveloffset: -1]
 === Build
 
 ifndef::slides[.Build of an Android app]
-image::android/build.svg[alt="Build", width=100%]
+image::android/build.svg[alt="Build", width=80%]
 
 === Running
 

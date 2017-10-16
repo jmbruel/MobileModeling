@@ -18,11 +18,12 @@ ifdef::slides[:leveloffset: -1]
 
 image:logo-irit.png[SLAT, width=40%]
 
-ifndef::slides[]
+ifdef::slides[=== !]
 Le `{societe}` est un des plus gros laboratoire informatique de France.
 C'est une unité mixte de recherche, ce qui signifie qu'en plus du CNRS,
 elle a d'autres tutelles (les 3 universités toulousaine, l'INPT, etc.).
 
+ifdef::slides[=== !]
 Chaque tutelle est dotée d'un représentant local du laboratoire qui fait
 le lien entre le laboratoire et la tutelle.
 Pour l'UT2J, ce représentant, c'est moi ({jmb}).
@@ -30,19 +31,25 @@ Les membres UT2J du `{societe}` sont organisés en équipes.
 Ils se partagent un buget alloué chaque année par l'université
 (environ 38K€ pour 2017).
 
+ifdef::slides[=== !]
 Parmi les responsabilité du responsable IRIT-UT2J, on trouve de nombreuses
 tâches administratives (au point de devoir maintenir une F.A.Q - cf. {socurl}).
 
 Celles qui sont le plus consomatrices d'énergie sont les tâches en relation avec les dépenses.
 
-.exemple de "Demande d'achats" (un simple fichier excel)
+ifdef::slides[=== !]
+
+ifndef::slides[.exemple de "Demande d'achats" (un simple fichier excel)]
 image::demandeAchat.png[width=80%]
+
+ifdef::slides[=== !]
 
 Je vous sollicite donc pour la modélisation d'une application mobile qui sera
 potentiellement développée dans le future, et qui permettra de faciliter cette gestion.
 Pour simplifier les description suivantes, nous appelerons cette application
 MIU (_**M**anagement of **I**RIT-**U**T2J_)footnote:[En clin d'oeil à D. Hofstadter].
 
+ifdef::slides[=== !]
 Voici quelques caractéristiques et besoins clients (en vrac) :
 
 - MIU devra fonctionner sur des mobiles et tablettes {Android}.
@@ -52,12 +59,14 @@ Voici quelques caractéristiques et besoins clients (en vrac) :
 Une dépense peut être prévisionnelle (devis pour un restaurant par exemple, ou déplacement à l'étranger),
 précise (achat de matériel sur devis) ou confirmée (remboursement de mission a posteriori par exemple).
 - Un utilisateur ne pourra pas engager de dépense si celle-ci dépasse le budget de son équipe.
+ifdef::slides[=== !]
 - La gestionnaire ou le responsable peuvent mettre à jour les montants de dépenses.
 - Concernant les frais, chacun aura sur sa "page personnelle" les informations
 concernant le solde global du compte de son équipe.
 - On pourra envisager toute option utile pour le futur (comme le calcul d'avance sur mission).
 - La gestionnaire et le responsable seront systématiquement informé de toute déclaration d'intention de dépense.
 
+ifdef::slides[=== !]
 Quelques commentaires :
 
 - Chaque membre est toujours rattaché à une équipe (et une seule)
@@ -66,7 +75,9 @@ Quelques commentaires :
 gestionnaire et le responsable peuvent saisir ces dépenses)
 - Les dépenses sont consultables (lecture seule) par tous les membres UT2 du {societe}.
 
-.Exemple de gestion actuelle des dépenses
+ifdef::slides[=== !]
+
+ifndef::slides[.Exemple de gestion actuelle des dépenses]
 image::finances-IRIT-UT2J.png[width=100%]
 
 [{topic}]
@@ -193,5 +204,4 @@ Vous pouvez insérer une section "auto-évaluation" dans votre rapport, qui repr
 vous permet de vous auto-évaluer.
 ====
 
-
-ifdef::slides[:leveloffset: 0]
+ifdef::slides[:leveloffset: +1]
