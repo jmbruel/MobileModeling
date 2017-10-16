@@ -8,7 +8,7 @@ DECKJS=../..asciidoctor-deck.js/templates/haml/
 ASCIIDOCTOR=asciidoctor -a icons=font
 EXT=adoc
 OUTPUT=.
-SITE=..
+SITE=../teaching
 #THEME=colony
 THEME=riak
 #The valid options are coderay, highlightjs, prettify, and pygments.
@@ -42,7 +42,6 @@ $(OUTPUT)/%.dzslides.html: %.$(EXT) *.asc
 caseStudy.html: caseStudy.$(EXT)
 	@echo '==> Compiling asciidoc files to generate HTML'
 	$(ASCIIDOCTOR) -b html5 \
-		-a imagesdir=$(IMAGESDIR) \
 		-a numbered \
 		-a stylesheet=$(STYLE) \
 		-a data-uri \

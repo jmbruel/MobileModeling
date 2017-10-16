@@ -1,0 +1,103 @@
+= Papyrus4Education
+Jean-Michel Bruel (bruel@irit.fr)
+2015-09-29 -- OSS4MDE'2015
+// ------------------------------------------ config
+include::default.conf[]
+
+// ------------------------------------------ definitions
+ifndef::definitions[]
+include::../definitions.txt[]
+endif::definitions[]
+:pfe: Papyrus4Education
+:pfeVersion: 0.7.0
+:wikisite: https://wiki.eclipse.org/Papyrus_for_Education
+:wiki: {wikisite}[Papyrus4Education wiki]
+
+// ------------------------------------------ resources
+[{topic}]
+== Available resources
+
+- Download ({Papyrus} Mars extra)
+* http://download.eclipse.org/modeling/mdt/papyrus/updates/nightly/mars/extra/
+- Wiki
+* {wikisite}
+- mailing list
+* https://dev.eclipse.org/mailman/listinfo/papyrus4edu
+
+== Tool
+
+- To install {pfe} you need the *Mars* version of {Papyrus}
+(see https://eclipse.org/downloads/index-developer-installer.php[eclipse mars])
+- Download using the http://download.eclipse.org/modeling/mdt/papyrus/updates/nightly/mars[update site]
+* Then select `menu:Papyrus Extra[Other]` and select the feature (see below)
++
+image::extra.png[]
+
+NOTE: The feature has been published with `0.7.0` version
+
+WARNING: The work is still in progress, the current implementation uses someiniitial
+features.
+
+// ------------------------------------------ start
+== Getting started
+
+To start Papyrus4Education select
+`menu:Preferences[Papyrus > ViewPoints Configuration]`
+
+image::viewpoint.png[]
+
+== Voilà!
+
+[cols="a,d",frame="none"]
+|===
+|
+- {eclipse} Mars `4.5`
+- {papyrus} `1.1.2`
+- {pfe} `{pfeVersion}`
+|
+image:pfe/{pfeVersion}/eclipse4.5.png[width=500]
+|===
+
+ifdef::slides[== Simplified palettes (UC)]
+
+image::pfe/{pfeVersion}/palette-uc.png[]
+
+ifdef::slides[== Simplified palettes (CD)]
+
+image::pfe/{pfeVersion}/palette-cd.png[]
+
+ifdef::slides[== Limited number of Diagrams]
+
+image::pfe/{pfeVersion}/newDiagrams.png[]
+
+
+== Adapt it to your needs
+
+image::pfe/{pfeVersion}/tuning1-sk.png[]
+
+ifdef::slides[== Adapt it to your needs]
+
+image::pfe/{pfeVersion}/tuning2-sk.png[]
+
+ifdef::slides[== Adapt it to your needs]
+
+image::pfe/{pfeVersion}/tuning3-sk.png[]
+
+// ------------------------------------------ contrib
+== How to contribute (light) ?
+
+- Stay tuned => https://www.eclipse.org/papyrus/
+- Check the https://www.eclipse.org/forums/index.php?t=thread&frm_id=121[Papyrus forum]
+- Contact project leader => mailto:Sebastien.Gerard@cea.fr[Sebastien.Gerard@cea.fr]
+- Contribute to the wiki => https://wiki.eclipse.org/MDT/Papyrus
+
+== How to contribute (really) ?
+
+To contribute to {pfe} itself:
+
+- Use https://wiki.eclipse.org/Papyrus_Developer_Guide/How_to_Contribute_to_Papyrus_with_Gerrit[Gerrit]
+- `org.eclipse.papyrus\extraplugins\papyrus4education\org.eclipse.papyrus.uml.diagram.education\resources\configuration\EducationUML.configuration`
+
+ifdef::slides[== How to contribute (Gerrit) ?]
+
+image::pfe/gerrit.png[]

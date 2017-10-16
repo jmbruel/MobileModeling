@@ -1,0 +1,106 @@
+// ------------------------------------------ Overview
+[{intro}]
+== icon:gears[] Android Studio in a minute
+
+ifdef::slides[:leveloffset: -1]
+
+[{topic}]
+=== Install
+
+include::install.asc[]
+
+[{topic}]
+=== Create a new Android Studio project
+
+image::as{asversion}/start.png[height=500]
+
+[{topic}]
+=== Configure the project
+
+image::as{asversion}/new1.png[height=500]
+
+[{topic}]
+=== Specify the API level
+
+image::as{asversion}/new2.png[height=500]
+
+[{topic}]
+=== Create an Activity
+
+image::as{asversion}/new3.png[height=500]
+
+[{topic}]
+=== Configure the activity
+
+image::as{asversion}/new4.png[height=500]
+
+[{topic}]
+=== First app created!
+
+image::as{asversion}/new5.png[width=700]
+
+[{topic}]
+=== Detail of an activity
+
+image::as{asversion}/activity-xml.png[width=700]
+
+
+[{topic}]
+=== Android Virtual Device Manager
+
+image::as{asversion}/ADB-integration.png[height=300]
+
+[{topic}]
+=== AVD Selection
+
+image::as{asversion}/AVD-selection.png[height=400]
+
+ifdef::slides[NOTE: AVD: Android Virtual Device]
+
+[{topic}]
+=== AVD Configuration
+
+image::as{asversion}/AVD-config.png[height=500]
+
+[{topic}]
+=== AVD Launching
+
+ifdef::slides[image::as{asversion}/AVD-launching1.png[height=500]]
+ifndef::slides[image::as{asversion}/AVD-launching1.png[width=30%]]
+
+ifdef::slides[]
+[{topic}]
+=== AVD Launching (ctd.)
+endif::slides[]
+
+ifdef::slides[image::as{asversion}/AVD-launching2.png[height=500]]
+ifndef::slides[image::as{asversion}/AVD-launching2.png[width=30%]]
+
+ifdef::slides[]
+[{topic}]
+=== AVD Launching (ctd.)
+endif::slides[]
+
+ifdef::slides[image::as{asversion}/AVD-launching3.png[height=500]]
+ifndef::slides[image::as{asversion}/AVD-launching3.png[width=30%]]
+
+[{topic}]
+=== Navigation Editor
+
+image::as{asversion}/NavigationEditor.png[height=300]
+
+ifdef::slides[]
+[{topic}]
+=== Navigation Editor (ctd.)
+endif::slides[]
+
+image::as{asversion}/NavigationEditor2.png[height=500]
+
+ifdef::slides[]
+[{topic}]
+=== Navigation Editor (ctd.)
+endif::slides[]
+
+image::as{asversion}/AndroidStudioNavigationEditor.png[height=500]
+
+ifdef::slides[:leveloffset: 0]

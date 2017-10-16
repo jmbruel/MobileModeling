@@ -79,7 +79,6 @@ include::organization.asc[]
 
 include::brainstorming.asc[]
 
-/////
 // ------------------------------------------ Web Pascal Roques
 include::mobilisation.asc[]
 
@@ -118,8 +117,6 @@ ifdef::slides[]
 
 include::caseStudy.asc[]
 endif::slides[]
-
-/////
 
 ifndef::slides[]
 :numbered!:
