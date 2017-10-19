@@ -50,9 +50,10 @@ endif::definitions[]
 ifndef::slides[.La promo 2016/2017]
 image::promo2016.jpg[width=50%]
 
-.La promo 2017/2018
+ifndef::slides[== !]
+
+ifndef::slides[.La promo 2017/2018]
 image::promo2017.png[width=50%]
-endif::slides[]
 
 {siteurl}
 
