@@ -1,6 +1,6 @@
 = icon:mobile-phone[role=lime] Mobile Application icon:android[role=lime] *Modeling*
 Jean-Michel Bruel <jbruel@gmail.com>
-v1.5, {localdate} (started on 2015-10-05)
+v1.6, {localdate} (started on 2015-10-05!)
 :icons: font
 :experimental:
 :status:
@@ -43,21 +43,22 @@ endif::definitions[]
 
 // ------------------------------------------ disclaimer
 :numbered!:
+
 [{intro}]
 == Avant-propos
+{siteurl}
 
+ifdef::slides[== La promo 2016/2017]
 
 ifndef::slides[.La promo 2016/2017]
 image::promo2016.jpg[width=50%]
 
-ifndef::slides[== !]
+ifdef::slides[== La promo 2017/2018]
 
 ifndef::slides[.La promo 2017/2018]
 image::promo2017.png[width=50%]
 
-{siteurl}
-
-ifdef::slides[== !]
+ifdef::slides[== Disclaimer]
 
 Désolé...
 [{incremental}]
@@ -133,7 +134,7 @@ endif::slides[]
 
 :leveloffset: 0
 
-include::../about.adoc[]
+include::about.adoc[]
 
 ifdef::slides[]
 // ------------------------------------------ Brainstorm => up
