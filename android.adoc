@@ -100,7 +100,7 @@ image::android/build.svg[alt="Build", width=80%]
 === Running
 
 ifndef::slides[.Running of an Android app]
-plantuml::android.plantuml[format=svg, alt="Running", width=100%]
+plantuml::android.plantuml[format=svg, alt="Running", width="50%"]
 
 === Overall Organization
 
