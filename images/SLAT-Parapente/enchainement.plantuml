@@ -1,20 +1,59 @@
-@startuml
-'------------------------- Fonts & Defs
-!include /Users/bruel/localdev/MobileModeling/images/SLAT-Parapente/mesdefs.plantuml
-'------------------------- Main components
-State "Ecran \nd'accueil" as accueil
-State "Chauffeur" as chauffeur {
-	State "Config" as running <<running>>
-	running : entry/ declareChauffeur(self)
-	State "Conduire" as driving
-	
-	[*] --> running
-	running -> driving : drive()
-	
-}
-'------------------------- Diagram
-[*] --> accueil
-accueil --> chauffeur : driving()
-accueil --> [*] : quit()
-chauffeur --> [*] : quit()
-@enduml
+	@startuml
+	'------------------------- Fonts & Defs
+	'!include /Users/bruel/localdev/MobileModeling/images/SLAT-Parapente/mesdefs.plantuml
+	'------------------------- Main components
+	'skinparam backgroundColor LightYellow
+	skinparam defaultFontName Monaco
+	center footer - Generated automatically - SM[AC|@RT] 2019
+
+	'skinparam backgroundColor LightBlue
+	skinparam defaultFontName Monaco
+	skinparam state {
+			'StartColor Green
+			'EndColor Red
+			ArrowColor Black
+			'BackgroundColor Peru
+			BackgroundColor<<NotVisible>> Olive
+			BorderColor Gray
+			BorderColor<<Running>> DarkGreen
+			'FontName Papyrus
+	}
+	hide footbox
+
+	actor Bob
+	participant Phone as ":Phone"
+	'box "Internal Service" #LightBlue
+		participant S as "<<Service>>"
+	'end box
+
+	participant Lamp1 as "l1:Lamp"
+	participant Lamp2 as "l2:Lamp"
+
+	'--------- UC4 -------------
+	group UseCase5
+		Bob -> Phone: ButtonPress()
+		Phone -> S
+			alt		v==
+				S -> Lamp1: Switch()
+				else v==Off
+				S -> Lamp2: Switch()
+			end
+	end
+
+	'--------- UC5 -------------
+	' OnButtonPressed -> A;B
+	group UseCase4 (Xor)
+		'OnButtonpressed
+		Bob -> Phone: ButtonPress()
+		'A
+		group alt Lamp1==On
+		Phone -> Lamp1: Off()
+		else Lamp1==Off
+		Phone -> Lamp1: On()
+		end
+		'B
+		Phone -> Lamp2: Switch()
+	end
+
+
+	@enduml

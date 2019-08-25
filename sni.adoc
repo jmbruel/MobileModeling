@@ -1,6 +1,6 @@
-= icon:mobile-phone[role=lime] *Modelisation* d'interface icon:android[role=lime]
-Jean-Michel Bruel <jbruel@gmail.com>
-v1.0, {localdate}
+= icon:mobile-phone[] Modélisation des *IHM* icon:android[]
+Jean-Michel Bruel -- bruel@irit.fr
+{localdate}
 :icons: font
 :experimental:
 :status:
@@ -36,10 +36,21 @@ endif::slides[]
 
 // ------------------------------------------ definitions
 ifndef::definitions[]
-include::definitions.txt[]
+include::../definitions.txt[]
 endif::definitions[]
-:androidicon: Android icon:android[role=lime]
+:androidicon: Android icon:android[]
 :iosicon: http://www.apple.com/fr/ios/[iOS icon:apple[]]
+// ------------------------------------------ plan
+:numbered:
+[{intro}]
+== icon:book[] Plan
+ifdef::slides[== !]
+
+[{incremental}]
+- Pourquoi modéliser
+- Les diagrammes clefs
+- Le **S**chéma de **N**avigation d'**I**nterface
+- Ecrans et enchaînements
 
 // ------------------------------------------ Web Pascal Roques
 include::mobilisation.asc[]
@@ -47,18 +58,9 @@ include::mobilisation.asc[]
 // ------------------------------------------ Diagrams
 include::diagrams.asc[]
 
-ifndef::slides[]
-:numbered!:
+include::gui.asc[]
 
-include::biblio.asc[]
-
-include::glossary.asc[leveloffset=+2]
-
-endif::slides[]
-
-:leveloffset: 0
-
-include::about.adoc[]
+include::sni.asc[]
 
 ifdef::slides[]
 // ------------------------------------------ Brainstorm => up

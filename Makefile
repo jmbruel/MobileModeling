@@ -5,7 +5,7 @@ DECKJS=../..asciidoctor-deck.js/templates/haml/
 #STYLE=../asciidoctor-stylesheet-factory/stylesheets/jmb.css
 #STYLE=../asciidoctor-stylesheet-factory/stylesheets/asciidoctor.css
 #ASCIIDOCTOR=asciidoctor  -a icons=font -a linkcss! -a data-uri
-ASCIIDOCTOR=asciidoctor -a icons=font
+ASCIIDOCTOR=asciidoctor -a icons=font -a linkcss!
 EXT=adoc
 OUTPUT=.
 SITE=../teaching
@@ -33,6 +33,7 @@ $(OUTPUT)/%.dzslides.html: %.$(EXT) *.asc
 	$(ASCIIDOCTOR) -b dzslides \
 		-T $(DZSLIDES) -E slim \
 		-a slides -a dzslides \
+		-a data-uri \
 		-r asciidoctor-diagram \
 		-a styledir=. \
 		-a stylesheet=$(STYLE) \
