@@ -1,6 +1,6 @@
 = icon:mobile-phone[role=lime] Mobile Application icon:android[role=lime] *Modeling*
 Jean-Michel Bruel <jbruel@gmail.com>
-v1.6, {localdate} (started on 2015-10-05!)
+v1.9, {localdate} (started on 2015-10-05!)
 :icons: font
 :experimental:
 :status:
