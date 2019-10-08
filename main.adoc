@@ -64,9 +64,9 @@ Désolé...
 [{incremental}]
 - ... pour l'*anglais* (really?)
 - ... de ne *pas être un spécialiste* d'{android}
-- ... que vous soyez seulement la *2ème promo* à subir ce cours
+- ... que vous soyez seulement la *4ème promo* à subir ce cours
 - ... que ce cours arrive *avant que vous sachiez développer* en Android/Mobile [detail]#(majorité)#
-- ... que vous ayez à bosser *sans ordi* ce matin! [detail]#(au moins 1h30!)#
+- ... que vous ayez à bosser *sans ordi* pour ce cours! [detail]#(juste 1h30!)#
 
 // ------------------------------------------ plan
 :numbered:
