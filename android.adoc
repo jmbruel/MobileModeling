@@ -1,4 +1,5 @@
 = icon:android[] Android Application *Architecture*
+ifndef::jmbtopic[]
 Jean-Michel Bruel -- bruel@irit.fr
 {localdate} (started on 2015-10-05)
 :icons: font
@@ -37,6 +38,7 @@ ifndef::slides[]
 :source:
 endif::slides[]
 
+endif::jmbtopic[]
 
 // ------------------------------------------ definitions
 ifndef::definitions[]
@@ -246,6 +248,8 @@ image::android/activities.svg[]
 - Material specifics, ART
 - Distribution and commercial aspects
 
+ifndef::jmbtopic[]
+
 ifndef::slides[]
 :numbered!:
 
@@ -259,7 +263,9 @@ include::glossary.asc[leveloffset=+2]
 
 endif::slides[]
 
-include::../about.asc[]
+include::about.adoc[]
+
+endif::jmbtopic[]
 
 ifdef::slides[]
 // ------------------------------------------ Brainstorm => up

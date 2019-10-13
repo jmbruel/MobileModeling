@@ -1,6 +1,7 @@
 = icon:mobile-phone[role=lime] Mobile Application icon:android[role=lime] *Modeling*
 Jean-Michel Bruel <jbruel@gmail.com>
 v1.9, {localdate} (started on 2015-10-05!)
+:jmbtopic:
 :icons: font
 :experimental:
 :status:
@@ -103,9 +104,12 @@ endif::slides[]
 
 include::reverse.asc[]
 
+include::android.adoc[leveloffset=+1]
+
+
 // ------------------------------------------ Case Study
 ifndef::slides[]
-include::caseStudy.adoc[]
+include::caseStudy2018.adoc[]
 endif::slides[]
 
 ifdef::slides[]
@@ -120,14 +124,20 @@ ifdef::slides[]
 - Tools
 - Expected outputs
 
-include::caseStudy.adoc[]
 endif::slides[]
 
 ifndef::slides[]
 :numbered!:
 
+// ------------------------------------------ Appendices
+
+[appendix]
+include::androidMM.asc[]
+
+[appendix]
 include::biblio.asc[]
 
+[appendix]
 include::glossary.asc[leveloffset=+2]
 
 endif::slides[]

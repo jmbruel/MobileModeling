@@ -13,6 +13,7 @@ State Android {
 	State resource1
 	State resource2
 }
+hide empty members
 Application -> UserId : has
 UserId -> linux : runs on
 linux -> vm: has its own
