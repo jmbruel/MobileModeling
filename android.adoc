@@ -58,7 +58,7 @@ ifdef::slides[== !]
 - Big picture
 - Concepts
 - Android Studio
-- Brainstorm on {android} MetaModel
+- Brainstorm on {androidicon} MetaModel
 - Thoughts for your process
 
 // ------------------------------------------ Install Android Studio pour gagner du temps
