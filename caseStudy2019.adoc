@@ -1,0 +1,170 @@
+:soft: Card Game Player
+:experimental:
+:imagesdir: images
+
+[{topic}]
+= Etude de cas 2019 : icon:users[] {soft} 
+
+ifndef::definitions[]
+include::../definitions.txt[]
+endif::definitions[]
+
+ifdef::slides[:leveloffset: -1]
+
+[{topic}]
+== Cahier des charges
+
+ifdef::slides[=== !]
+{soft} (CGP) est un projet collaboratif de développement devant permettre simplement :
+
+* Pour un concepteur de jeu  (`Game`) :
+** décrire les règles d'un jeu de carte (`Games rules`)
+** décrire les cartes (`Card design`)
+* Pour un joueur :
+** jouer contre (ou avec) les autres joueurs
+** manipuler une interface individuelle (`CGPI`)
+
+.Software architecture
+image::CardGamePlayer.svg[width=100%]
+
+ifdef::slides[=== !]
+
+En tant que spécialiste de la modélisation d'applications mobiles, vous aurez la charge de la modélisation des interfaces de l'application. 
+
+ifdef::slides[=== !]
+Voici quelques caractéristiques et besoins clients (en vrac) :
+
+- 
+
+ifdef::slides[=== !]
+Quelques commentaires :
+
+- Comme "Minimal Viable Product" on pourra imaginer le cas de deux joueurs ayant chacun une carte de poker et une application qui désigne le vainqueur.
+
+ifdef::slides[=== !]
+
+[{topic}]
+== Questions
+
+. Réalisez un diagramme des cas d’utilisation de cette application.
++
+.Exemple 2015/2016 (Ballades VTT)
+image::voisMaBalade/uc.png[width=100%]
+ifdef::correction[]
+.Une correction possible
+plantuml::images/SLAT-parapente/uc.plantuml[uc]
+endif::correction[]
++
+. Réalisez un diagramme de domaine (diagramme des classes métiers) de cette application.
++
+.Exemple 2015/2016 (Ballades VTT)
+image::voisMaBalade/dc2.png[width=100%]
++
+ifdef::correction[]
+.Une correction possible
+plantuml::images/SLAT-parapente/dc.plantuml[dc]
+endif::correction[]
++
+. Réalisez un diagramme (de votre choix) pour représenter les écrans (et leur enchainement)
+de votre application.
++
+.Exemple 2015/2016 d'une maquette en Balsamiq (Ballades VTT)
+image::balsamiq.png[]
+
+TIP: Un écran est composé d’éléments structurels.
+Il peut donc être représenté avec un diagramme de classe.
+
+.Exemple 2015/2016 (Ballades VTT)
+image::voisMaBalade/enchainement.png[width=100%]
+
+Les enchainements d’écrans peuvent être décrits comme des comportements.
+On peut utiliser :
+
+- un d’état-transition (cf. <<enchainementEtat,Figure ci-dessous>>),
+- un outil de sketchs, genre {balsamiq} (cf. <<enchainementSLAT,Figure ci-dessous>>),
+- un outil qui génère du code, genre {androidstudio}
+
+[[enchainementEtat]]
+.Une correction possible - Exemple 2016/2017 (SLAT Parapente)
+plantuml::images/SLAT-parapente/enchainement.plantuml[enchainement]
+
+[[enchainementSLAT]]
+.Une correction possible - Autre exemple 2016/2017 (SLAT Parapente)
+image::enchainement-slat.png[]
+
+[{topic}]
+== Outils
+
+- Pour les mockups/sketchs : https://iutblagnac.mybalsamiq.com/projects/miu/
++
+[TIP]
+=====
+Vous pouvez accéder aux dessins de :
+
+- 2015/2016 (https://iutblagnac.mybalsamiq.com/projects/voismabalade).
+- 2017 (https://iutblagnac.mybalsamiq.com/projects/slat-parapente).
+- un exemple de 2018 (https://iutblagnac.mybalsamiq.com/projects/miu2018-mgn/grid)
+=====
++
+- Pour {uml} : {papyrus}, {plantuml}, StarUML
+
+[{topic}]
+== Résultats attendus
+
+[{incremental}]
+- Rapport au format `.pdf` ou Google Doc
+- Démo au format de votre choix (PPT/PDF, Vidéo)
++
+.Exemple de vidéo réalisée en 2015/2016
+[TIP]
+=====
+//video::Lahitette_Lassus-Pomes_PresentationApp.wmv[width=640, start=60, end=140, options=autoplay]
+https://www.dropbox.com/s/8yxu6s9q8ekf4e1/Lahitette_Lassus-Pomes_PresentationApp.wmv?dl=0
+=====
+/////
++
+.Exemple de vidéo réalisée l'an dernier
+[TIP]
+=====
+//video::Lahitette_Lassus-Pomes_PresentationApp.wmv[width=640, start=60, end=140, options=autoplay]
+https://www.dropbox.com/s/8yxu6s9q8ekf4e1/Lahitette_Lassus-Pomes_PresentationApp.wmv?dl=0
+=====
+/////
+- `.zip` avec figures, modèles `.uml`, code, etc.
+
+// ------------------------------------------ Evaluation
+[{topic}]
+== Evaluation
+
+Rappelons les conseils habituels :
+
+- clarté des diagrammes et des choix (explicites) de conception ou d'interprétation réalisés
+- *cohérence* entre les diagrammes
+
+ifdef::slides[=== Evaluation (suite)]
+
+L'évaluation portera principalement sur les critères suivants :
+
+[[Criteres]]
+.Critères
+[align="center",width="90%",cols="6,^4,^2",options="header"]
+|=========================================================
+| Critère											| Type de critère 			| Poids approximatif
+| Diagramme des UC									| Correction, pertinence	| 10%
+| Diagramme des Classes Domaine		| Correction, pertinence	| 10%
+| Maquettes utilisateur / Écrans	| Correction, pertinence	| 20%
+| Diagrammes d'enchainement d'écran		| Correction, pertinence	| 20%
+| Cohérence inter-modèles (SNI/DSS, UC/DSS/DS/DCP)	|  Correction, pertinence	| 15%
+| Communication/Présentations/Ignite					         | subjectif :-)				| 15%
+| Clarté – Présentation du Dossier					         | subjectif :-)				| 10%
+|=========================================================
+
+ifdef::slides[=== Evaluation (suite)]
+
+[TIP]
+====
+Vous pouvez insérer une section "auto-évaluation" dans votre rapport, qui reprend cette grille et
+vous permet de vous auto-évaluer.
+====
+
+ifdef::slides[:leveloffset: +1]
