@@ -32,9 +32,21 @@ ifdef::slides[=== !]
 En tant que spécialiste de la modélisation d'applications mobiles, vous aurez la charge de la modélisation des interfaces de l'application. 
 
 ifdef::slides[=== !]
-Voici quelques caractéristiques et besoins clients (en vrac) :
+Voici quelques caractéristiques et besoins clients (en vrac, mais numérotée pour références) :
 
-- 
+. Le logiciel doit permettre à une personne de décrire les cartes d'un jeu de carte
+. Le logiciel doit permettre à une personne de décrire les règles d'un jeu de carte
+. Le logiciel doit permettre à une personne de jouer à un jeu de carte
+. Le logiciel doit permettre à plusieurs personnes de jouer ensemble à un même jeu de carte
+
+ifdef::slides[=== !]
+Voici quelques options que vous pourrez considérer (en vrac, mais numérotée pour références) :
+
+[start=5]
+. Le logiciel doit permettre à une personne d'importer/exporter les cartes d'un jeu de carte
+. Le logiciel doit permettre à une personne d'importer/exporter des règles d'un jeu de carte
+. Le logiciel doit permettre à une personne de jouer contre des adversaires virtuels
+. Le logiciel doit permettre de sauvegarder puis de reprendre 
 
 ifdef::slides[=== !]
 Quelques commentaires :
@@ -95,7 +107,7 @@ image::enchainement-slat.png[]
 [{topic}]
 == Outils
 
-- Pour les mockups/sketchs : https://iutblagnac.mybalsamiq.com/projects/miu/
+- Pour les mockups/sketchs : https://iutblagnac.mybalsamiq.com/projects/cardgameplayer2019
 +
 [TIP]
 =====
