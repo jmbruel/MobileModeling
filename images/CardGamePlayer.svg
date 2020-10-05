@@ -274,7 +274,7 @@
       <path stroke-linecap="butt" transform="matrix(0.6938,0,0,0.6938,-121.4688,-326.4532)" clip-path="url(#clipPath2)" fill="none" image-rendering="auto" d="M187.5 482.9658 L556 482.9658 L556 522.9658 L187.5 522.9658 Z" stroke-miterlimit="1.45"/>
     </g>
     <g stroke-linecap="butt" transform="matrix(1,0,0,1,-172,-182)" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" font-weight="bold" stroke-miterlimit="1.45">
-      <text x="354.415" xml:space="preserve" y="507.5009" clip-path="url(#clipPath2)" stroke="none">Game</text>
+      <text x="328.8799" xml:space="preserve" y="507.5009" clip-path="url(#clipPath2)" stroke="none">Current Game</text>
     </g>
     <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,-172,-182)" stroke-linecap="butt">
       <path fill="none" d="M390.5114 420 L419.9802 420" clip-path="url(#clipPath2)"/>

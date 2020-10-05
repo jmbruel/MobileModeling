@@ -52,6 +52,8 @@ ifdef::slides[=== !]
 Quelques commentaires :
 
 - Comme "Minimal Viable Product" on pourra imaginer le cas de deux joueurs ayant chacun une carte de poker et une application qui désigne le vainqueur.
+- On se limitera aux jeux de carte qui n'ont pas d'accessoires (comme des jetons de poker)
+
 
 ifdef::slides[=== !]
 
