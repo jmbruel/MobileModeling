@@ -34,7 +34,7 @@ source 'https://rubygems.org'                             # This tells Bundler w
 gem 'asciidoctor', '>= 1.5.4'                           # If using AsciiDoc syntax, need 0.1.1 for Header support
 gem 'asciidoctor-diagram'
 #gem 'jekyll'
-#gem 'github-pages'
+gem 'github-pages'
 # for nokogiri : sudo gem install nokogiri -- --with-xml2-include=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/libxml2/ --use-system-libraries
 
 # FIXME

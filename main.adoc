@@ -1,6 +1,6 @@
 = icon:mobile-phone[role=lime] Mobile Application icon:android[role=lime] *Modeling*
 Jean-Michel Bruel <jbruel@gmail.com>
-v1.9, {localdate} (started on 2015-10-05!)
+v1.20, {localdate} (started on 2015-10-05!)
 :jmbtopic:
 :icons: font
 :experimental:
@@ -54,20 +54,26 @@ ifdef::slides[== La promo 2016/2017]
 ifndef::slides[.La promo 2016/2017]
 image::promo2016.jpg[width=50%]
 
+[{topic}]
 ifdef::slides[== La promo 2017/2018]
 
 ifndef::slides[.La promo 2017/2018]
 image::promo2017.png[width=50%]
 
+[{topic}]
+ifdef::slides[== La promo 2018/2019/2020...]
+
+:-(
+
+[{topic}]
 ifdef::slides[== Disclaimer]
 
 Désolé...
 [{incremental}]
 - ... pour l'*anglais* (really?)
 - ... de ne *pas être un spécialiste* d'{android}
-- ... que vous soyez seulement la *4ème promo* à subir ce cours
 - ... que ce cours arrive *avant que vous sachiez développer* en Android/Mobile [detail]#(majorité)#
-- ... que vous ayez à bosser *sans ordi* pour ce cours! [detail]#(juste 1h30!)#
+- ... pour le distanciel [detail]#(quoi que...)#
 
 // ------------------------------------------ plan
 :numbered:
