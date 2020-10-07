@@ -48,6 +48,7 @@ endif::definitions[]
 :iosicon: http://www.apple.com/fr/ios/[iOS icon:apple[]]
 :as: https://developer.android.com/studio[Android Studio]
 :asversion: 1.4
+:lastAsVersion: 4.0.2
 
 // ------------------------------------------ plan
 :numbered:
@@ -74,10 +75,11 @@ ifndef::slides[]
 
 [WARNING]
 ====
-Pour ne pas perdre du temps, commencez à lancer l'installation d'{as} si ce n'est déjà fait sur vos machines en téléchartgeant au choix depuis :
-
+. Pour ne pas perdre du temps, commencez à lancer l'installation d'{as} si ce n'est déjà fait sur vos machines en téléchargeant au choix depuis :
++
 include::install.asc[]
-
++
+. La dernière version d'{as} au moment de rédiger ce support est la `{lastAsVersion}` mais ce support de cours utilise les éléments (menus, captures d'écran, etc.) de la version `{asversion}`.
 ====
 endif::slides[]
 
@@ -96,17 +98,17 @@ ifdef::slides[:leveloffset: -1]
 === Build
 
 ifndef::slides[.Build of an Android app]
-image::android/build.svg[alt="Build", width=80%]
+image::android/build.svg[alt="Build", width=70%]
 
 === Running
 
 ifndef::slides[.Running of an Android app]
-plantuml::android.plantuml[format=svg, alt="Running", width="50%"]
+plantuml::android.plantuml[format=svg, alt="Running", width="60%"]
 
 === Overall Organization
 
 ifndef::slides[.Basic organization of an Android app]
-image::android/basicActivity.svg[alt="Organization", width=100%]
+image::android/basicActivity.svg[alt="Organization", width=80%]
 
 === Interactions
 

@@ -66,6 +66,17 @@ ifdef::slides[== La promo 2018/2019/2020...]
 :-(
 
 [{topic}]
+ifdef::slides[== La promo 2020/2021]
+
+Spécial COVID-19...
+
+image::covid2020-1.png[width=50%]
+
+image::covid2020-2.png[width=50%]
+
+
+
+[{topic}]
 ifdef::slides[== Disclaimer]
 
 Désolé...
