@@ -46,6 +46,7 @@ include::../definitions.txt[]
 endif::definitions[]
 :androidicon: Android icon:android[]
 :iosicon: http://www.apple.com/fr/ios/[iOS icon:apple[]]
+:as: https://developer.android.com/studio[Android Studio]
 :asversion: 1.4
 
 // ------------------------------------------ plan
@@ -73,9 +74,7 @@ ifndef::slides[]
 
 [WARNING]
 ====
-Pour ne pas perdre du temps, commencez à lancer l'installation
-d'{as} si ce n'est déjà fait sur vos machines en téléchartgeant
-au choix depuis :
+Pour ne pas perdre du temps, commencez à lancer l'installation d'{as} si ce n'est déjà fait sur vos machines en téléchartgeant au choix depuis :
 
 include::install.asc[]
 
