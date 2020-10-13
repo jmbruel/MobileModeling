@@ -47,7 +47,8 @@ endif::definitions[]
 :androidicon: Android icon:android[]
 :iosicon: http://www.apple.com/fr/ios/[iOS icon:apple[]]
 :as: https://developer.android.com/studio[Android Studio]
-:asversion: 1.4
+//:asversion: 1.4
+:asversion: 4.0.2
 :lastAsVersion: 4.0.2
 
 // ------------------------------------------ plan
@@ -115,7 +116,7 @@ image::android/basicActivity.svg[alt="Organization", width=80%]
 ifndef::slides[.Basic interactions between users and apps]
 image::android/basicActivityInteraction.svg[alt="Interactions", width=100%]
 
-=== Set of librairies, resources, etc.
+=== Set of libraries, resources, etc.
 
 ifndef::slides[.Complex organization of concepts]
 plantuml::overview.plantuml[format=svg, alt="Overview", width=100%]
@@ -223,14 +224,14 @@ include::metamodel.asc[]
 
 - List of `Activities`
 ** Top Activities
-** Cateory activities
+** Category activities
 ** Detail/edit
-- Navigatin through the activities
+- Navigation through the activities
 - App structure
 - Process:
 ** define class, resources (images, ...), strings
-** toplevel / layout
-** loop for each activities
+** top-level / layout
+** loop for each activity
 
 ifdef::slides[== !]
 

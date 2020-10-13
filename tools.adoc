@@ -1,0 +1,15 @@
+List of tools:
+
+Pour UML :
+
+- https://products.office.com/fr-fr/visio/flowchart-software[Visio]
+- http://draw.io/[Draw.io]
+- http://dia-installer.de/[Dia]
+- http://sourceforge.net/projects/visual-sni/[Visual SNI]
+
+Pour les maquettes d'écran :
+TIP: Liste plus complète disponible https://korben.info/18-outils-gratuits-mockups.html[ici]
+
+- https://balsamiq.com/wireframes/[Balsamiq]
+- https://developer.apple.com/xcode/interface-builder/[Interface Builder (pour Mac)]
+- https://gomockingbird.com/mockingbird/[Mocking Bird]
