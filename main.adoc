@@ -126,7 +126,8 @@ include::android.adoc[leveloffset=+1]
 
 // ------------------------------------------ Case Study
 ifndef::slides[]
-include::caseStudy2018.adoc[]
+:leveloffset: +1
+include::caseStudy2020.adoc[]
 endif::slides[]
 
 ifdef::slides[]
