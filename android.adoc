@@ -48,8 +48,9 @@ endif::definitions[]
 :iosicon: http://www.apple.com/fr/ios/[iOS icon:apple[]]
 :as: https://developer.android.com/studio[Android Studio]
 //:asversion: 1.4
-:asversion: 4.0.2
+
 :lastAsVersion: 4.0.2
+:asversion: 4.0.2
 
 // ------------------------------------------ plan
 :numbered:
