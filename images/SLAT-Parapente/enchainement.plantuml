@@ -1,6 +1,6 @@
 	@startuml
 	'------------------------- Fonts & Defs
-	'!include /Users/bruel/localdev/MobileModeling/images/SLAT-Parapente/mesdefs.plantuml
+	!include config.cfg
 	'------------------------- Main components
 	'skinparam backgroundColor LightYellow
 	skinparam defaultFontName Monaco
