@@ -1,15 +1,12 @@
-:soft: Original Quiz Player
+:soft: Card Game Player
 :experimental:
 :imagesdir: images
-:icons: font
-:gift: https://docs.moodle.org/3x/en/GIFT_format[GIFT]
-:aiken: https://docs.moodle.org/3x/en/Aiken_format[Aiken]
 
 [{topic}]
-= Etude de cas 2020 : icon:check-square-o[] {soft} 
+= Etude de cas 2020 : icon:users[] {soft} 
 
 ifndef::definitions[]
-include::definitions.txt[]
+include::../definitions.txt[]
 endif::definitions[]
 
 ifdef::slides[:leveloffset: -1]
@@ -18,43 +15,44 @@ ifdef::slides[:leveloffset: -1]
 == Cahier des charges
 
 ifdef::slides[=== !]
-{soft} (OQP) est un projet collaboratif de développement devant permettre simplement :
+{soft} (CGP) est un projet collaboratif de développement devant permettre simplement :
 
-* Pour un concepteur de quiz  (`Quiz`) :
-** décrire les questions du quiz et les réponses associées
-** décrire les paramètres supplémentaires
-* Pour un joueur (celui répond au quiz) :
-** jouer seul ou contre les autres joueurs
-** manipuler une interface individuelle de suivie (scores, progressions, ...)
+* Pour un concepteur de jeu  (`Game`) :
+** décrire les règles d'un jeu de carte (`Games rules`)
+** décrire les cartes (`Card design`)
+* Pour un joueur :
+** jouer contre (ou avec) les autres joueurs
+** manipuler une interface individuelle (`CGPI`)
 
-//.Software architecture
-//image::CardGamePlayer.svg[width=100%]
+.Software architecture
+image::CardGamePlayer.svg[width=100%]
 
 ifdef::slides[=== !]
 
 En tant que spécialiste de la modélisation d'applications mobiles, vous aurez la charge de la modélisation des interfaces de l'application. 
 
 ifdef::slides[=== !]
-Voici quelques caractéristiques et besoins clients (en vrac, mais numérotée pour référence) :
+Voici quelques caractéristiques et besoins clients (en vrac, mais numérotée pour références) :
 
-. Le logiciel doit permettre à une personne de décrire les questions et les réponses associées (type, niveau, mots-clés, ...)
-. Le logiciel doit permettre à une personne de décrire les paramètres d'un quiz (questions mélangées, choisies au hazard, ...)
-. Le logiciel doit permettre à une personne de répondre à un quiz
-. Le logiciel doit permettre à plusieurs personnes de jouer ensemble à un même quiz
+. Le logiciel doit permettre à une personne de décrire les cartes d'un jeu de carte
+. Le logiciel doit permettre à une personne de décrire les règles d'un jeu de carte
+. Le logiciel doit permettre à une personne de jouer à un jeu de carte
+. Le logiciel doit permettre à plusieurs personnes de jouer ensemble à un même jeu de carte
 
 ifdef::slides[=== !]
 Voici quelques options que vous pourrez considérer (en vrac, mais numérotée pour références) :
 
 [start=5]
-. Le logiciel doit permettre à une personne d'importer/exporter les questions selon plusieurs formats standards ({gift}, {aiken}, ...)
-. Le logiciel doit permettre à une personne d'importer/exporter des quiz existants
+. Le logiciel doit permettre à une personne d'importer/exporter les cartes d'un jeu de carte
+. Le logiciel doit permettre à une personne d'importer/exporter des règles d'un jeu de carte
+. Le logiciel doit permettre à une personne de jouer contre des adversaires virtuels
 . Le logiciel doit permettre de sauvegarder puis de reprendre 
 
 ifdef::slides[=== !]
 Quelques commentaires :
 
-- Comme "Minimal Viable Product" on pourra imaginer le cas d'un logiciel qui affiche les questions une par une, saisie les réponses et affiche le score final. On pourra commencer par une question, puis par un fichier d'entrée (type `CSV`) de questions, puis améliorer au fur et à mesure. 
-- On se limitera aux quiz sans images ou suppléments, dans un premier temps (uniquement du texte).
+- Comme "Minimal Viable Product" on pourra imaginer le cas de deux joueurs ayant chacun une carte de poker et une application qui désigne le vainqueur.
+- On se limitera aux jeux de carte qui n'ont pas d'accessoires (comme des jetons de poker)
 
 
 ifdef::slides[=== !]
@@ -90,6 +88,9 @@ image::balsamiq.png[]
 TIP: Un écran est composé d’éléments structurels.
 Il peut donc être représenté avec un diagramme de classe.
 
+.Exemple 2015/2016 (Ballades VTT)
+image::voisMaBalade/enchainement.png[width=100%]
+
 Les enchainements d’écrans peuvent être décrits comme des comportements.
 On peut utiliser :
 
@@ -99,7 +100,7 @@ On peut utiliser :
 
 [[enchainementEtat]]
 .Une correction possible - Exemple 2016/2017 (SLAT Parapente)
-image::SLAT-parapente/enchainement.png[enchainement]
+plantuml::images/SLAT-parapente/enchainement.plantuml[enchainement]
 
 [[enchainementSLAT]]
 .Une correction possible - Autre exemple 2016/2017 (SLAT Parapente)
@@ -167,8 +168,8 @@ L'évaluation portera principalement sur les critères suivants :
 | Diagramme des Classes Domaine		| Correction, pertinence	| 10%
 | Maquettes utilisateur / Écrans	| Correction, pertinence	| 20%
 | Diagrammes d'enchainement d'écran		| Correction, pertinence	| 20%
-| Cohérence inter-modèles (Maquettes/DSS, UC/DSS/DS/DCP)	|  Correction, pertinence	| 15%
-| Communication/Présentations					         | subjectif :-)				| 15%
+| Cohérence inter-modèles (SNI/DSS, UC/DSS/DS/DCP)	|  Correction, pertinence	| 15%
+| Communication/Présentations/Ignite					         | subjectif :-)				| 15%
 | Clarté – Présentation du Dossier					         | subjectif :-)				| 10%
 |=========================================================
 

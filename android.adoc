@@ -49,7 +49,7 @@ endif::definitions[]
 :as: https://developer.android.com/studio[Android Studio]
 //:asversion: 1.4
 
-:lastAsVersion: 4.1
+:lastAsVersion: 4.0.2
 :asversion: 4.0.2
 
 // ------------------------------------------ plan
