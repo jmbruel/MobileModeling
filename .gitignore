@@ -5,3 +5,6 @@ M2105.html
 .asciidoctor
 main.dzslides.html
 *.html
+.bundle
+out
+vendor

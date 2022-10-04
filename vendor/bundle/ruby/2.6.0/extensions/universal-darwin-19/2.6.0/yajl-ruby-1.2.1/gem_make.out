@@ -1,0 +1,21 @@
+current directory: /Users/jmb/localdev/MobileModeling/vendor/bundle/ruby/2.6.0/gems/yajl-ruby-1.2.1/ext/yajl
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /Library/Ruby/Site/2.6.0 -r ./siteconf20201013-73975-1yplytd.rb extconf.rb
+creating Makefile
+
+current directory: /Users/jmb/localdev/MobileModeling/vendor/bundle/ruby/2.6.0/gems/yajl-ruby-1.2.1/ext/yajl
+make "DESTDIR=" clean
+
+current directory: /Users/jmb/localdev/MobileModeling/vendor/bundle/ruby/2.6.0/gems/yajl-ruby-1.2.1/ext/yajl
+make "DESTDIR="
+compiling yajl.c
+compiling yajl_alloc.c
+compiling yajl_buf.c
+compiling yajl_encode.c
+compiling yajl_ext.c
+yajl_ext.c:881:22: error: use of undeclared identifier 'rb_cFixnum'
+    rb_define_method(rb_cFixnum, "to_json", rb_yajl_json_ext_fixnum_to_json, -1);
+                     ^
+1 error generated.
+make: *** [yajl_ext.o] Error 1
+
+make failed, exit code 2

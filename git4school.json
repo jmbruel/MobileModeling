@@ -1,0 +1,29 @@
+  {
+    "title": "Mobile Modeling",
+    "course": "UML",
+    "program": "LP APSIO",
+    "year": "2020-2021",
+    "startDate": "2020-10-07 12:00",
+    "endDate": "2020-12-31 12:00",
+    "questions": ["0"],
+    "repositories": [
+      { "url": "https://github.com/LP-APSIO/mobile-modeling-web-site-equipe-jaune", "LP-APSIO": "Les Jaunes", "tpGroup": "1" },
+      { "url": "https://github.com/LP-APSIO/mobile-modeling-web-site-equipe-rouge", "LP-APSIO": "Les Rouges", "tpGroup": "2" }
+    ],
+    "sessions": [
+      {
+        "startDate": "2020-10-07 12:00",
+        "endDate": "2020-12-31 12:00", 
+        "tpGroup": "1"
+      }
+    ],
+    "reviews": [
+      { "date": "2020-10-07 12:00", "label": "Review 1", "tpGroup": "12", "questions": ["0"] }
+    ],
+    "corrections": [
+      { "date": "2020-10-08 12:00", "label": "Correction 1", "tpGroup": "2", "questions": ["0"] }
+    ],
+    "others": [
+      { "date": "2020-10-09 12:00", "label": "Other 1", "tpGroup": "1", "questions": ["0"] }
+    ]
+  }

@@ -1,0 +1,44 @@
+current directory: /Users/jmb/localdev/teaching/MobileModeling/vendor/bundle/ruby/2.7.0/gems/ffi-1.9.10/ext/ffi_c
+/Users/jmb/.rvm/rubies/ruby-2.7.0/bin/ruby -I /Users/jmb/.rvm/rubies/ruby-2.7.0/lib/ruby/site_ruby/2.7.0 -r ./siteconf20201122-20721-16p7yez.rb extconf.rb
+checking for ffi_call() in -lffi... yes
+checking for ffi_prep_closure()... yes
+checking for ffi_raw_call()... yes
+checking for ffi_prep_raw_closure()... yes
+checking for rb_thread_blocking_region()... no
+checking for rb_thread_call_with_gvl()... yes
+checking for rb_thread_call_without_gvl()... yes
+checking for ffi_prep_cif_var()... yes
+creating extconf.h
+creating Makefile
+
+current directory: /Users/jmb/localdev/teaching/MobileModeling/vendor/bundle/ruby/2.7.0/gems/ffi-1.9.10/ext/ffi_c
+make "DESTDIR=" clean
+
+current directory: /Users/jmb/localdev/teaching/MobileModeling/vendor/bundle/ruby/2.7.0/gems/ffi-1.9.10/ext/ffi_c
+make "DESTDIR="
+compiling AbstractMemory.c
+compiling ArrayType.c
+compiling Buffer.c
+compiling Call.c
+Call.c:368:5: error: implicit declaration of function 'rb_thread_call_without_gvl' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+    rbffi_thread_blocking_region(call_blocking_function, data, (void *) -1, NULL);
+    ^
+./Thread.h:78:39: note: expanded from macro 'rbffi_thread_blocking_region'
+# define rbffi_thread_blocking_region rb_thread_call_without_gvl
+                                      ^
+Call.c:422:20: warning: incompatible pointer types passing 'VALUE (void *)' (aka 'unsigned long (void *)') to parameter of type 'VALUE (*)(VALUE)' (aka 'unsigned long (*)(unsigned long)') [-Wincompatible-pointer-types]
+        rb_rescue2(do_blocking_call, (VALUE) bc, save_frame_exception, (VALUE) &frame, rb_eException, (VALUE) 0);
+                   ^~~~~~~~~~~~~~~~
+/Users/jmb/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/ruby.h:1988:25: note: passing argument to parameter here
+VALUE rb_rescue2(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE,VALUE),VALUE,...);
+                        ^
+Call.c:422:50: warning: incompatible pointer types passing 'VALUE (void *, VALUE)' (aka 'unsigned long (void *, unsigned long)') to parameter of type 'VALUE (*)(VALUE, VALUE)' (aka 'unsigned long (*)(unsigned long, unsigned long)') [-Wincompatible-pointer-types]
+        rb_rescue2(do_blocking_call, (VALUE) bc, save_frame_exception, (VALUE) &frame, rb_eException, (VALUE) 0);
+                                                 ^~~~~~~~~~~~~~~~~~~~
+/Users/jmb/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/ruby.h:1988:47: note: passing argument to parameter here
+VALUE rb_rescue2(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE,VALUE),VALUE,...);
+                                              ^
+2 warnings and 1 error generated.
+make: *** [Call.o] Error 1
+
+make failed, exit code 2
